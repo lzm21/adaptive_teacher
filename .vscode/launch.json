@@ -1,0 +1,18 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: adaptive teacher train net",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_net.py",
+            "args": [
+                "--num-gpus", "1",
+                "--config", "configs/faster_rcnn_R101_cross_clipart.yaml",
+                "OUTPUT_DIR", "output/exp_clipart"
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
